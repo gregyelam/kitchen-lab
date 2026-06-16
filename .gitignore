@@ -1,3 +1,7 @@
 .DS_Store
 *.tmp
 temp/
+
+# operational / local tooling - keep out of public repo
+logs/
+.superpowers/

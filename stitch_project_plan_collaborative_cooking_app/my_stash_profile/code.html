@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&amp;family=Newsreader:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#5a5c5c",
+              "surface-container-highest": "#dbdddd",
+              "on-surface": "#2d2f2f",
+              "tertiary-dim": "#003cd3",
+              "on-primary-fixed-variant": "#0d6200",
+              "surface-container-high": "#e1e3e3",
+              "on-tertiary-container": "#002388",
+              "on-background": "#2d2f2f",
+              "surface-dim": "#d2d5d5",
+              "on-tertiary": "#f2f1ff",
+              "tertiary": "#0846ed",
+              "on-tertiary-fixed-variant": "#002a9e",
+              "primary-container": "#2ff801",
+              "inverse-primary": "#2ff801",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#0b5800",
+              "inverse-on-surface": "#9c9d9d",
+              "surface-tint": "#0f6b00",
+              "surface-container": "#e7e8e8",
+              "on-error-container": "#520c00",
+              "secondary-fixed-dim": "#d4d4d4",
+              "error-container": "#f95630",
+              "tertiary-container": "#9bacff",
+              "primary-fixed": "#2ff801",
+              "tertiary-fixed": "#9bacff",
+              "on-primary": "#d3ffc1",
+              "error": "#b02500",
+              "surface-variant": "#dbdddd",
+              "secondary-dim": "#4f4f4f",
+              "on-secondary": "#f3f3f3",
+              "primary-fixed-dim": "#2be800",
+              "on-primary-fixed": "#064200",
+              "secondary-fixed": "#e2e2e2",
+              "primary": "#0f6b00",
+              "outline-variant": "#acadad",
+              "on-secondary-fixed": "#3f3f3f",
+              "surface-container-low": "#f0f1f1",
+              "secondary": "#5b5b5b",
+              "on-tertiary-fixed": "#00104d",
+              "error-dim": "#b92902",
+              "secondary-container": "#e2e2e2",
+              "background": "#f6f6f6",
+              "on-secondary-fixed-variant": "#5b5b5b",
+              "on-error": "#ffefec",
+              "surface": "#f6f6f6",
+              "surface-bright": "#f6f6f6",
+              "outline": "#757777",
+              "inverse-surface": "#0c0f0f",
+              "on-secondary-container": "#525252",
+              "tertiary-fixed-dim": "#889dff",
+              "primary-dim": "#0c5d00"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Newsreader"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { display: none; }
+        body { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-black">
+<!-- TopAppBar -->
+<header class="bg-[#f6f6f6] dark:bg-black flex justify-between items-center w-full px-6 py-4 fixed top-0 z-[100] border-b-4 border-[#2d2f2f] dark:border-[#2ff801] transition-none active:translate-y-1">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2ff801]" data-icon="menu">menu</span>
+<h1 class="font-['Space_Grotesk'] font-black uppercase tracking-tighter text-4xl text-[#2d2f2f] dark:text-white italic">LAB KITCHEN</h1>
+</div>
+<div class="w-10 h-10 border-2 border-[#2d2f2f] bg-surface-container-highest overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeMaMPWAz2MxRraCkAsk-GLg8C8aaGoiuSjEnwoxnEiZ_cAa1I52q8ZFHCDEu9UTdAor6i_4AcW28RrgIDchR9DBRaHCfw2HPB3VisT8fi6PIbjZACXVVsKF04FTds14GPRlGY6xADdj8YnUBIpMu7SLyr1Mya2-owoaox2z1pfLUJvuPE346oKobPWmBik_8eula02TEolMfMZWIAfiv62t-0vj0MJ4d7Q_eEkyA-NAVTcMLnqj0OCo9uoPQVsmwa8AAEHtsxEBq8"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-4 max-w-4xl mx-auto space-y-12">
+<!-- Instagram Sync Section -->
+<section class="bg-white border-4 border-on-background p-6 space-y-4">
+<div class="flex justify-between items-start">
+<div class="flex gap-3 items-center bg-black text-white px-3 py-1">
+<span class="material-symbols-outlined text-sm" data-icon="sync">sync</span>
+<span class="font-headline font-bold text-xs tracking-widest uppercase">INSTAGRAM SYNC</span>
+</div>
+<span class="font-headline font-black text-2xl text-tertiary">@USER_LAB</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<div class="aspect-square border-2 border-on-background relative group cursor-crosshair">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all" data-alt="Raw bowl of colorful salad ingredients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8Bt8iV7ToFu_7zcr1LTPpg1hR2I58w3kA3-br_Y-SeIos9UuLrbhVR6_BEtcPcJLH6L6dlroRP5Oo2FIi981iMBJ7jQQ1kO--PJ8NciQ91ypqPMTCgHLjVTkgRaMAV6VXjttYbRbrYFqXi000ABhgtfIhvpw5lBg3EGN5cSoh3Yyn13cpsGVjVOSA8WiLj7QDiRvVsvWk2ZdUoI3GycCQX0uJBKu1kNu8JchBJ6I67secWHQ_Uq-Vu-435y9DDnaOCPoB-2Vr3o7F"/>
+<div class="absolute bottom-1 right-1 bg-primary-fixed p-0.5 border border-black">
+<span class="material-symbols-outlined text-xs text-black" data-icon="play_circle">play_circle</span>
+</div>
+</div>
+<div class="aspect-square border-2 border-on-background relative group cursor-crosshair">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all" data-alt="Messy flatlay of meat and vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEA5-D8QobhPIaKRcBOCGSuTLw7gPFlPOOdP702CIshMunZtQUN16IN8Dw6K6UaiEyNRaassMJ_9-zskm5H_lidv_aSsMKz_gZziEINSt3F5eMf4nYUgByGfuk2cYL6yHRxRuJuKwQQ-C_yPyiwMVXrMfnJkpZGYr3OaMo2o9WD9M_u4uMFaNF70cs2wPPbqU_HXgL9W_XzFITbFIFTPCUaepzhbAZP5T3SO7GXdBRryrsL0hitA6Kncc0YWgFvLdHU2mHuUbcyaac"/>
+<div class="absolute bottom-1 right-1 bg-primary-fixed p-0.5 border border-black">
+<span class="material-symbols-outlined text-xs text-black" data-icon="play_circle">play_circle</span>
+</div>
+</div>
+<div class="aspect-square border-2 border-on-background relative group cursor-crosshair">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all" data-alt="Steaming plate of pasta close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTq2DUXfbGG3tkVTO9YTS1e0zy2qHIWLaoN1bzVo5OisWgHG_ImKkBVdHPY_PYAFPnKb8NrwrJXQrCDu9DCYiH2NjbOFUG9fGUXgJw4SnH3x78v2ymDgG6WoeBTxOIWFK7LETp3xFfxBbaVRuH4O_5-G3ROb1ODXkd6NV0GRkuS_VLmOEp-97RUn7J53oOQKzh2l88qwVLaJkM3HVQELVu9nYlUJmlrPNfk1LrcMOM_3ZnauEANbeVOVhCIlnbj_7Em10aT56PjRIO"/>
+</div>
+<div class="aspect-square bg-surface-container flex flex-col items-center justify-center border-2 border-on-background hover:bg-primary-fixed transition-none cursor-pointer">
+<span class="material-symbols-outlined text-on-background" data-icon="add">add</span>
+<span class="font-headline font-bold text-[10px] uppercase">MORE</span>
+</div>
+</div>
+</section>
+<!-- Cooking Streak Counter -->
+<section class="flex flex-col md:flex-row gap-6 items-stretch">
+<div class="flex-1 bg-primary-fixed border-4 border-on-background p-8 relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline font-black text-black text-xl uppercase italic leading-none">COOKING<br/>STREAK</h2>
+<div class="flex items-baseline gap-2 mt-4">
+<span class="font-headline font-black text-8xl text-black tracking-tighter leading-none">14</span>
+<span class="font-headline font-bold text-2xl text-black uppercase">DAYS</span>
+</div>
+</div>
+<!-- Abstract Brutalist Graphic -->
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[200px]" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<div class="flex-none w-full md:w-64 bg-white border-4 border-on-background p-6 flex flex-col justify-between">
+<div>
+<h3 class="font-headline font-bold text-sm text-on-surface uppercase tracking-widest border-b-2 border-black pb-2 mb-4">MILESTONE</h3>
+<p class="font-body italic text-lg leading-tight">Next badge: <br/><span class="font-headline font-black not-italic text-2xl">SOUS CHEF</span></p>
+</div>
+<div class="mt-6 w-full h-4 bg-surface-container border-2 border-black">
+<div class="h-full bg-black" style="width: 70%;"></div>
+</div>
+</div>
+</section>
+<!-- My Recent Cooks Grid -->
+<section class="space-y-6">
+<div class="flex items-center gap-4">
+<h2 class="font-headline font-black text-4xl uppercase tracking-tighter italic">MY RECENT COOKS</h2>
+<div class="flex-grow h-1 bg-black"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Recipe Card 1 -->
+<article class="group relative">
+<div class="border-4 border-on-background bg-white p-2">
+<div class="relative aspect-[4/3] overflow-hidden border-2 border-black">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Rustic bowl of spicy ramen noodles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk9EohcQIVIFwe0v_WE71D2yD0W8ZfPbSYyHfnfoEXMLtL2hCxzpau3fgxB6WCmGFEJxvD-SYEhXsPDVDpuqi6y2TOGylK0SdVaFtj0iY7KGUbVmbysl1xPTysEvIVDrLsqDWKGs75ENcWbFIW-I6J5ihAUhxMo764NaK7Fj3e2sDV4DBEtZw_WHaNjiNgRWOAqNsq-OAUmPgbNDc9hy2gsXmz9uFQLSTdNV9TBdPf9PYwJFv9PlkKatBa8m08CKNkvWN5fQlLOybd"/>
+<div class="absolute top-4 left-4 bg-primary-fixed text-black font-headline font-black px-3 py-1 border-2 border-black">
+                                OCT 12
+                            </div>
+</div>
+<div class="mt-4 px-2 pb-2">
+<h3 class="font-headline font-black text-2xl uppercase tracking-tight leading-none group-hover:text-primary transition-none">CHILLI OIL UDON BLISS</h3>
+<div class="flex gap-4 mt-3">
+<span class="font-headline font-bold text-xs uppercase bg-surface-container px-2 py-1">20 MINS</span>
+<span class="font-headline font-bold text-xs uppercase bg-surface-container px-2 py-1">EASY</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Recipe Card 2 -->
+<article class="group relative">
+<div class="border-4 border-on-background bg-white p-2">
+<div class="relative aspect-[4/3] overflow-hidden border-2 border-black">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Glistening dark chocolate dessert on a plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9w1e_QgfkGRf3Qm2fUwFZWSjDOWKexs3Qew3yy0aCC75B7trUec8IKvGft31LG-XZWy2ddCAOKFSj598oPYnGvZ4KB3NW-TX2WDu1Z4dyhteMUBUffjYTBvCsn8FtsiZLDZEsk8o_9F2DKQjZ9xX3K2dCxnmKRVcbG5wMweX0reisxFuOtKOtgF6QfPQYf8CVamVhanMwgGjJG_yADiJjZ2XPxtkV_P1apVm_y6hKVPxDznQbWPhe2BdCiPviAZt37waOGYd4c1ok"/>
+<div class="absolute top-4 left-4 bg-primary-fixed text-black font-headline font-black px-3 py-1 border-2 border-black">
+                                OCT 09
+                            </div>
+</div>
+<div class="mt-4 px-2 pb-2">
+<h3 class="font-headline font-black text-2xl uppercase tracking-tight leading-none group-hover:text-primary transition-none">MOLTEN LAVA CAKE</h3>
+<div class="flex gap-4 mt-3">
+<span class="font-headline font-bold text-xs uppercase bg-surface-container px-2 py-1">45 MINS</span>
+<span class="font-headline font-bold text-xs uppercase bg-surface-container px-2 py-1">HARD</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Kitchen Mates Section -->
+<section class="bg-[#2d2f2f] text-white p-8 border-4 border-black">
+<div class="flex justify-between items-center mb-8">
+<h2 class="font-headline font-black text-3xl uppercase tracking-tighter">KITCHEN MATES</h2>
+<button class="bg-primary-fixed text-black px-4 py-2 font-headline font-black text-sm uppercase border-2 border-white hover:bg-white transition-none active:translate-y-1">INVITE CREW</button>
+</div>
+<div class="flex flex-wrap gap-8">
+<!-- Mate 1 -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 border-4 border-[#2ff801] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Headshot of a bearded young man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_QnMNvuADhv3CWt31S1aZSEIT9EmJOyvrvj1hYZvPep5FKQ1DODhGP2Ni2N-RjEbX_OHdvUoRiUdwMl8---lCx9j93UUp5E0tZoc4TPargSiVF29fJ0rJq459mhX_P9RK1oL1BTZwCkphOgv9iJzgL37fJLKMl3347Go6FGtqQ2avfQp6YhvYu0OlXbYDvP2xKyNujbZMkKt0T5DmuhdnB0lm-s2wiEHphe8kCFLlomh30PXbGYhL39ycpBO5-MEordw2ZXNVsZic"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-primary-fixed border-2 border-black"></div>
+</div>
+<span class="font-headline font-bold text-xs uppercase tracking-widest text-[#2ff801]">ALEX_K</span>
+</div>
+<!-- Mate 2 -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 border-4 border-white bg-surface relative overflow-hidden grayscale group-hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-alt="Headshot of a young woman with curly hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHLfZUN_95wKuJbeCnmko-tgOv8ND0jH1aOAiz3vhF7STlbTAIVZP4tOoPSR1OMGgZ_LqCl8kc8mTkF3szG8Yv32oHKtaHpwS1QiujRp6hJ0NWPxLvIFRIqMKpDWTqiK0gmLCiCuLUyS-zLJunXuGELgHFIyVfHze6PeIQs1pNFiK_ZnPMk5quFHvc-kribBlrJEpEuL8Rq0BJ1GduRspldw3BloFdctgOSY_CDNL5DMbyPh8wBNNfixk_OGCLjtG5cLvjY8o2fyD0"/>
+</div>
+<span class="font-headline font-bold text-xs uppercase tracking-widest text-white/60 group-hover:text-white">SARAH.P</span>
+</div>
+<!-- Mate 3 -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 border-4 border-[#2ff801] bg-surface relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Headshot of a man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs7W1K75gXYHOsiXejppUHeGcdTvR7CaYKWIWTv6a-lPNM4rG0v--AoOx0p9MFZM6Ly0Qpwo0nPrrmURDLOQdE6bR0EgnoaW8IAUfADd1EjTfnkD6vFQw3-TxcIIT-bJ-4CqjTuV2_lytkZXuy0OI5gG6fsr1AL_sCU3wQnMoFcRNT9b1DnjHLs9PfMYSvFkiklfBorFAw_r7Q09nWSnvyGaFrMI0hHn4T6_m8vasR3FO9ThT8d6ZOJL3VdAIFUHHFJij_2Ss1qD_4"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-primary-fixed border-2 border-black"></div>
+</div>
+<span class="font-headline font-bold text-xs uppercase tracking-widest text-[#2ff801]">MARCUS_V</span>
+</div>
+<!-- Mate 4 -->
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 border-4 border-white bg-surface relative overflow-hidden grayscale group-hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-alt="Headshot of a professional looking woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2hugm31Pmf1UHTheokCGU7E1FII7mkxp7ve63lvVNWq_C6DFAXVonmfdCyOOtMcxOi9X3uU-S9KeYUm95tPqo7CiAOtOFqAzujT1QLmpDE93AVgs2Gv1zPhAoJRdMF2Adovj5s_uqMJwrwYnBFAHzvrkyfoGi70kr-HrPbU2SAy5RA8DlQwHoR0TyA47teHByRZnT5ju8Oo1ayolmoueHeaYFSuX5eGAme-j9jjhZY8FYTQk0KnIAdT1qCzV80qbrBHI7DwMeKheM"/>
+</div>
+<span class="font-headline font-bold text-xs uppercase tracking-widest text-white/60 group-hover:text-white">LENA_M</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-[#ffffff]/60 dark:bg-black/60 backdrop-blur-xl border-t-4 border-[#2d2f2f] dark:border-[#2ff801]">
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 hover:bg-[#2ff801] hover:text-black">
+<span class="material-symbols-outlined" data-icon="amp_stories">amp_stories</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">FEED</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 hover:bg-[#2ff801] hover:text-black">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">THE LAB</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 hover:bg-[#2ff801] hover:text-black">
+<span class="material-symbols-outlined" data-icon="add_box">add_box</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">COOK</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 hover:bg-[#2ff801] hover:text-black">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">LIST</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#2ff801] text-black p-2 border-2 border-black scale-105 transition-none active:scale-95">
+<span class="material-symbols-outlined" data-icon="inventory_2" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">STASH</span>
+</div>
+</nav>
+</body></html>

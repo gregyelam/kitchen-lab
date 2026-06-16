@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE LAB | LAB KITCHEN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface-variant": "#5a5c5c",
+                        "surface-container-highest": "#dbdddd",
+                        "on-surface": "#2d2f2f",
+                        "tertiary-dim": "#003cd3",
+                        "on-primary-fixed-variant": "#0d6200",
+                        "surface-container-high": "#e1e3e3",
+                        "on-tertiary-container": "#002388",
+                        "on-background": "#2d2f2f",
+                        "surface-dim": "#d2d5d5",
+                        "on-tertiary": "#f2f1ff",
+                        "tertiary": "#0846ed",
+                        "on-tertiary-fixed-variant": "#002a9e",
+                        "primary-container": "#2ff801",
+                        "inverse-primary": "#2ff801",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#0b5800",
+                        "inverse-on-surface": "#9c9d9d",
+                        "surface-tint": "#0f6b00",
+                        "surface-container": "#e7e8e8",
+                        "on-error-container": "#520c00",
+                        "secondary-fixed-dim": "#d4d4d4",
+                        "error-container": "#f95630",
+                        "primary-fixed": "#2ff801",
+                        "tertiary-fixed": "#9bacff",
+                        "on-primary": "#d3ffc1",
+                        "error": "#b02500",
+                        "surface-variant": "#dbdddd",
+                        "secondary-dim": "#4f4f4f",
+                        "on-secondary": "#f3f3f3",
+                        "primary-fixed-dim": "#2be800",
+                        "on-primary-fixed": "#064200",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary": "#0f6b00",
+                        "outline-variant": "#acadad",
+                        "on-secondary-fixed": "#3f3f3f",
+                        "surface-container-low": "#f0f1f1",
+                        "secondary": "#5b5b5b",
+                        "on-tertiary-fixed": "#00104d",
+                        "error-dim": "#b92902",
+                        "secondary-container": "#e2e2e2",
+                        "background": "#f6f6f6",
+                        "on-secondary-fixed-variant": "#5b5b5b",
+                        "on-error": "#ffefec",
+                        "surface": "#f6f6f6",
+                        "surface-bright": "#f6f6f6",
+                        "outline": "#757777",
+                        "inverse-surface": "#0c0f0f",
+                        "on-secondary-container": "#525252",
+                        "tertiary-fixed-dim": "#889dff",
+                        "primary-dim": "#0c5d00"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Newsreader"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Newsreader', serif; }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .font-label { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<header class="bg-[#f6f6f6] dark:bg-black fixed top-0 w-full z-50 border-b-4 border-[#2d2f2f] dark:border-[#2ff801] flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2ff801] active:translate-y-1" data-icon="menu">menu</span>
+<h1 class="font-['Space_Grotesk'] font-black uppercase tracking-tighter text-4xl text-[#2d2f2f] dark:text-white italic">LAB KITCHEN</h1>
+</div>
+<div class="w-10 h-10 border-2 border-on-background overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a young person" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaxsRS-aXw1oFKZtc_Vwh8XdUEMy-kCc8R3lTVHZg-OeUWIAXvAsgcuE8_nJ46TL_EoO5vwWj8bdKdAiCc6X_2uecHqNPoNyq04NVtnwa__2jOyMtQ-FMNTNlpWwqgiD0Q_BKTzpXdYE2IuSoFBZExP44Z4J8mz20ydeqYU8pJDnTG4SQNgDxOm8QLa634yBXBRJoD_app8IBskU8WT8hY7DNaPxbZyNnHKi8C3HSoJN6YIjvdkX--KpWLfxH23a89hxrls_NyjKoM"/>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto">
+<section class="mb-12">
+<div class="relative group">
+<div class="absolute -inset-2 bg-on-background translate-x-2 translate-y-2 group-focus-within:translate-x-1 group-focus-within:translate-y-1 transition-transform"></div>
+<div class="relative flex items-center bg-surface-container-lowest border-4 border-on-background p-4 gap-4">
+<span class="material-symbols-outlined text-on-surface-variant scale-125" data-icon="search">search</span>
+<input class="w-full bg-transparent border-none focus:ring-0 font-headline font-black text-2xl uppercase placeholder:text-outline-variant italic" placeholder="WHAT'S IN THE FRIDGE?" type="text"/>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="tune">tune</span>
+</div>
+</div>
+</section>
+<section class="mb-16">
+<div class="flex items-baseline justify-between mb-8 border-b-4 border-on-background pb-2">
+<h2 class="font-headline font-black text-5xl uppercase italic tracking-tighter">THE LAB</h2>
+<span class="font-headline font-bold text-sm tracking-widest text-primary italic underline decoration-4">EXPERIMENT_V.02</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-primary-fixed border-4 border-on-background p-6 flex flex-col justify-between aspect-square active:translate-y-1 transition-none">
+<span class="material-symbols-outlined text-4xl" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<div>
+<h3 class="font-headline font-black text-4xl leading-none uppercase mb-2">SPEEDY<br/>(&lt;15 MINS)</h3>
+<p class="font-body italic text-lg opacity-80">No time? No problem. Maximum flavor, minimum minutes.</p>
+</div>
+</div>
+<div class="bg-tertiary-container border-4 border-on-background p-6 flex flex-col justify-between aspect-square active:translate-y-1 transition-none">
+<span class="material-symbols-outlined text-4xl" data-icon="skillet" style="font-variation-settings: 'FILL' 1;">skillet</span>
+<div>
+<h3 class="font-headline font-black text-4xl leading-none uppercase mb-2">ONE-POT<br/>WONDERS</h3>
+<p class="font-body italic text-lg opacity-80">Less washing up, more tucking in. One pan is all you need.</p>
+</div>
+</div>
+<div class="bg-surface-container-highest border-4 border-on-background p-6 flex flex-col justify-between aspect-square active:translate-y-1 transition-none">
+<span class="material-symbols-outlined text-4xl" data-icon="calendar_today" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<div>
+<h3 class="font-headline font-black text-4xl leading-none uppercase mb-2">SUNDAY<br/>PROJECTS</h3>
+<p class="font-body italic text-lg opacity-80">Low and slow. Spend your afternoon building the ultimate feast.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16">
+<h3 class="font-headline font-black text-2xl uppercase mb-6 tracking-widest">LIVE EXPERIMENTS</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="group relative">
+<div class="relative aspect-[4/5] border-4 border-on-background overflow-hidden bg-surface-container">
+<img alt="Spicy Noodles" class="w-full h-full object-cover grayscale-25 group-hover:scale-105 transition-transform duration-300" data-alt="Messy plate of spicy noodles with oil splashes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXqkODvmJHj8TdULPVk_ADkW5A8emHMzENFTQT_cPnjrGYPmRaGRh1i8nhz7vx-YABlTs8lxNjYPnrm_DSdaMOPmLtSiVnXgxLJO7Pr6UtJ_X_aQMYUQsH8KMNfWlkLey7kJtNB7e9ZfUxgv9bM1aTeA85SwYXIqeaowO91KGwQ4xC3ubVuG9BBzO-VBn4elBrTCtU4Ue1MW-VhpwI5mgYef2O13W5HFHbEc-JDRrv8rmub3QHwenuS81LkxQxodYQlM1l-7mGIRkW"/>
+<div class="absolute top-4 left-4 bg-[#2ff801] text-black px-3 py-1 border-2 border-black font-headline font-black text-sm italic">
+                            NEW_DROP
+                        </div>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-surface-container-lowest/60 backdrop-blur-xl border-t-4 border-on-background">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline font-black text-3xl uppercase leading-none max-w-[70%]">CHILLI OIL UDON SMASH</h4>
+<div class="bg-on-background text-primary-fixed px-2 py-1 font-headline font-bold text-lg">£1.45 <span class="text-xs">/PP</span></div>
+</div>
+<div class="flex gap-4">
+<span class="font-headline font-bold text-xs uppercase tracking-widest bg-on-background text-white px-2 py-0.5">12 MINS</span>
+<span class="font-headline font-bold text-xs uppercase tracking-widest border-2 border-on-background px-2 py-0.5">EASY</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative">
+<div class="relative aspect-[4/5] border-4 border-on-background overflow-hidden bg-surface-container">
+<img alt="Roast Chicken" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Half eaten roast chicken in a rustic pan with grease" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHUrwfc9flzKFpZzxO7xfFntfmhgNjW9ChC2xZut6pbPcdJ5jcYlWmCctnkVNiaTGLDWwUoowMp69dSqxgarxAnvR_u7V9tcG3nls4xIgQKEz0rtxGitdx7CdTPYTCC1Em499QUC6VLOyHyzJ3lh72rNNuYaSBNsaV1KTd1ahLM5qHIFo11Luju7qHTgDJovx3K9eVNSqFdi8JG_RCjIEEpBJH-JKRMhUqZ504dKkn1yNrAireZiaNFrVspy6i6bjGyRezvVixDE5G"/>
+<div class="absolute top-4 left-4 bg-tertiary text-white px-3 py-1 border-2 border-black font-headline font-black text-sm italic">
+                            PROJECT_S04
+                        </div>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-surface-container-lowest/60 backdrop-blur-xl border-t-4 border-on-background">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline font-black text-3xl uppercase leading-none max-w-[70%]">SCHMALTZY ROAST THIGHS</h4>
+<div class="bg-on-background text-primary-fixed px-2 py-1 font-headline font-bold text-lg">£2.10 <span class="text-xs">/PP</span></div>
+</div>
+<div class="flex gap-4">
+<span class="font-headline font-bold text-xs uppercase tracking-widest bg-on-background text-white px-2 py-0.5">85 MINS</span>
+<span class="font-headline font-bold text-xs uppercase tracking-widest border-2 border-on-background px-2 py-0.5">HARD</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-20">
+<div class="bg-on-background text-white p-8 flex flex-col md:flex-row gap-8 items-center justify-between border-4 border-primary">
+<div class="max-w-md text-center md:text-left">
+<h2 class="font-headline font-black text-4xl uppercase leading-none mb-4 italic">STILL HUNGRY?</h2>
+<p class="font-body text-xl italic opacity-80">Our algorithms are currently synthesizing 4,200 more recipes based on your current pantry levels.</p>
+</div>
+<button class="bg-primary-fixed text-black font-headline font-black text-2xl uppercase px-10 py-4 border-4 border-white active:translate-y-1 transition-none">
+                    REFRESH_GRID
+                </button>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-[#ffffff]/60 dark:bg-black/60 backdrop-blur-xl border-t-4 border-[#2d2f2f] dark:border-[#2ff801]">
+<button class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95">
+<span class="material-symbols-outlined" data-icon="amp_stories">amp_stories</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">FEED</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-[#2ff801] text-black p-2 border-2 border-black scale-105 transition-none active:scale-95">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">THE LAB</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95">
+<span class="material-symbols-outlined" data-icon="add_box">add_box</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">COOK</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">LIST</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">STASH</span>
+</button>
+</nav>
+</body></html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface-variant": "#5a5c5c",
+                        "surface-container-highest": "#dbdddd",
+                        "on-surface": "#2d2f2f",
+                        "tertiary-dim": "#003cd3",
+                        "on-primary-fixed-variant": "#0d6200",
+                        "surface-container-high": "#e1e3e3",
+                        "on-tertiary-container": "#002388",
+                        "on-background": "#2d2f2f",
+                        "surface-dim": "#d2d5d5",
+                        "on-tertiary": "#f2f1ff",
+                        "tertiary": "#0846ed",
+                        "on-tertiary-fixed-variant": "#002a9e",
+                        "primary-container": "#2ff801",
+                        "inverse-primary": "#2ff801",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#0b5800",
+                        "inverse-on-surface": "#9c9d9d",
+                        "surface-tint": "#0f6b00",
+                        "surface-container": "#e7e8e8",
+                        "on-error-container": "#520c00",
+                        "secondary-fixed-dim": "#d4d4d4",
+                        "error-container": "#f95630",
+                        "primary-fixed": "#2ff801",
+                        "tertiary-fixed": "#9bacff",
+                        "on-primary": "#d3ffc1",
+                        "error": "#b02500",
+                        "surface-variant": "#dbdddd",
+                        "secondary-dim": "#4f4f4f",
+                        "on-secondary": "#f3f3f3",
+                        "primary-fixed-dim": "#2be800",
+                        "on-primary-fixed": "#064200",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary": "#0f6b00",
+                        "outline-variant": "#acadad",
+                        "on-secondary-fixed": "#3f3f3f",
+                        "surface-container-low": "#f0f1f1",
+                        "secondary": "#5b5b5b",
+                        "on-tertiary-fixed": "#00104d",
+                        "error-dim": "#b92902",
+                        "secondary-container": "#e2e2e2",
+                        "background": "#f6f6f6",
+                        "on-secondary-fixed-variant": "#5b5b5b",
+                        "on-error": "#ffefec",
+                        "surface": "#f6f6f6",
+                        "surface-bright": "#f6f6f6",
+                        "outline": "#757777",
+                        "inverse-surface": "#0c0f0f",
+                        "on-secondary-container": "#525252",
+                        "tertiary-fixed-dim": "#889dff",
+                        "primary-dim": "#0c5d00"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Newsreader"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f6f6f6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2d2f2f;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-black">
+<!-- TopAppBar -->
+<header class="bg-[#f6f6f6] dark:bg-black fixed top-0 w-full z-[100] border-b-4 border-[#2d2f2f] dark:border-[#2ff801] flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2d2f2f] dark:text-white cursor-pointer" data-icon="menu">menu</span>
+<h1 class="font-['Space_Grotesk'] font-black uppercase tracking-tighter text-4xl text-[#2d2f2f] dark:text-white italic">
+                LAB KITCHEN
+            </h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8 font-label font-bold text-sm tracking-widest uppercase">
+<a class="text-[#2ff801]" href="#">FEED</a>
+<a class="text-[#2d2f2f] hover:bg-[#2ff801] hover:text-black transition-none px-2" href="#">THE LAB</a>
+<a class="text-[#2d2f2f] hover:bg-[#2ff801] hover:text-black transition-none px-2" href="#">COOK</a>
+</nav>
+<div class="w-10 h-10 border-2 border-on-background overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile avatar close up male" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHZlSrxDRQ3e7HEpC6RbbBoFgtVOkxQIioHirGQvp-xcXZfU1RGZbTghTVSfDZ6OZR0QuoukYs0yqcr2iEFtgAntyJ3rV54v86cEL-AM8mlg_S0j-x8g35AsHSdtDh4dLhK9sE4xprkfcYfMQpZ2sAHYlee3A7IR9sQIlyuPkAKhRTS4AdcR06Jlp1EOhul0kmUbgrHIuj-K_t9s7m3TE2_KlZewzKD--IezirAIhndkuPnrNLFx9vtQ_AOlmgZXR-Ag1yugDaJsoS"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 max-w-2xl mx-auto px-4">
+<!-- Feed Item 1 -->
+<article class="mb-20 group relative">
+<div class="flex items-center justify-between mb-4 px-2">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 border-2 border-on-background">
+<img class="w-full h-full object-cover" data-alt="Sharp cornered male chef portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDTybNuI399JLyQt775tswO65JcTDITBkC9qYq0exJwc1UjDXgTLF8nGPXUILXAS6NyP6psTfs-QpS8KA6kKIXSRIR2nZn6NvyrrVprwYZ7QlKndD3_Bs5eZjagP1JgQJnjyJFVjffhyjglvAZaRUkhhvreyc8LEM4AFihARpLMpxwTzvPuZ83ucNm1GozLK2ZMqK_Tkado2TmR_LLlqk524pAeJpThMDK9CwOvkkwbXKHNYUnMw5Yf-Tabl27dXpQov9mXPdNVd5L"/>
+</div>
+<div>
+<p class="font-headline font-black text-lg uppercase leading-none">Leo_Cooks</p>
+<p class="font-label text-xs uppercase tracking-tight text-on-surface-variant">2 HOURS AGO • LONDON</p>
+</div>
+</div>
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</div>
+<div class="relative aspect-[4/5] border-4 border-on-background overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale-0 group-hover:scale-105 transition-transform duration-500" data-alt="Raw messy steak and fries overhead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxikAlDHMob92iMfMYYgKwLcPEIEyI22kPB5nKdBVA1wMNVtMZZCw4XLhhhZkf1DWpzaSWK0XSN7HPofcpPQyPBiacb81CJ6nH5SEgScWNP-uRNjMtlFjGzzI4obgFecwXsJW5HEidma8XprmsT5TwjaJxpPpaB5ZMLzx0PajEDH1GdCGYdp6JKg04vJPR-tLKgEqaAxfJFimRgUTSYNARFidc3YjWD8O24VMg-USezNuWYzOch9CkVgimlrYj2xuSYohR9nxihd46"/>
+<!-- Social Overlay -->
+<div class="absolute bottom-6 left-6 right-6 liquid-glass border-2 border-on-background p-4 flex justify-between items-end">
+<div>
+<h2 class="font-headline font-extrabold text-2xl uppercase italic mb-1">MESSY ENTRECÔTE</h2>
+<p class="font-body italic text-lg text-on-surface-variant">Bone-marrow butter &amp; hand-cut chips.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-headline font-black text-3xl">1.2K</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-widest">SAVED</span>
+</div>
+</div>
+</div>
+<div class="mt-4 flex gap-4 px-2">
+<button class="flex-1 bg-primary-fixed text-on-primary-fixed font-headline font-black py-4 border-4 border-on-background active:translate-y-1 transition-none uppercase tracking-tighter text-xl flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+                    SWIPE TO SAVE
+                </button>
+<a class="w-16 h-16 border-4 border-on-background flex items-center justify-center hover:bg-surface-container-high transition-none" href="#">
+<span class="material-symbols-outlined scale-125" data-icon="link">link</span>
+</a>
+</div>
+<div class="mt-6 px-2">
+<div class="flex gap-4 items-center">
+<div class="flex -space-x-3">
+<div class="w-8 h-8 border-2 border-on-background"><img class="w-full h-full object-cover" data-alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzXlOInxZZSZRyT6w0wXtg1FRCAkoakIAiqxMpky9FOCqDnc0zMTqgJWbR1hxw_lS-KXdzaVOL1kkcDEC6TSbXCuE1nVOltX67AXFIJ1ipTnkwLLcMsa04KBlIfaaUYA-0fIL7tIGwxQr4v7O14dE5m4d-1qCw951qZEuLwgLhURgIDYzhpDFEZyL_Q0NJpWljOta6LmcuNRniQMG9HZruo8wiLaD2VgmnnT-erBJudtIASww4yBaUqL4llZrrNe8zkc6kFHgGjFvo"/></div>
+<div class="w-8 h-8 border-2 border-on-background"><img class="w-full h-full object-cover" data-alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgOvKv7AMTMXkvA9IoR_vFhlOk4FO540JSc90YALFBurKgy3Wg9AfUZlfFjrHIFbgB4IRH4qzT1vEzyGUBH7lDQgYEt2Xds1oyT42Db1lhYGbTkWfsw0RROCuDxKU0Zrevxyti0NzgRKCUpppqhgr1Qnyhgrv8CAgOCWF4ZoawhER_NKcs8SUMCax-wFWK14mNq9JPy43zvbNj7yQ03sIQ_tl74VuRqhAiHyEUQeZMC0PjRKB_YObX4ff9C2TUlrZhTJoV8T5DzdXH"/></div>
+<div class="w-8 h-8 border-2 border-on-background flex items-center justify-center bg-black text-white font-label text-[10px]">+82</div>
+</div>
+<p class="font-label text-xs font-bold uppercase tracking-widest text-on-surface">Liked by <span class="underline">Chef_Jordan</span> &amp; 842 others</p>
+</div>
+</div>
+</article>
+<!-- Feed Item 2 (Video/Motion Style) -->
+<article class="mb-20 group relative">
+<div class="flex items-center justify-between mb-4 px-2">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 border-2 border-on-background">
+<img class="w-full h-full object-cover" data-alt="Portrait of woman chef" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdArgSgAiB80QiAEcSiPuMHybASpWs-4vlqESivNwl_59khUXADPrCpvi0_V9mhyqfTkzZRK_UjOcvF01KooMniBSlMgtwFqq7jfpn4EUHVgRKUHWLVWqot8CPmV0wpGAn7DDIewWzHHmj0FC_WDlo5QjvIbDHrdI20CsLMw5OePwUVZXvGFqtfTtbZ4gKZhEdi166BOgaa4IzNeoLp0NI_SH7lJeTRD-sSFv6TWkUu1JS7qm3qGGqbfl2Vc9setYdY-Nknjqz1kuo"/>
+</div>
+<div>
+<p class="font-headline font-black text-lg uppercase leading-none">SOPH_EATS</p>
+<p class="font-label text-xs uppercase tracking-tight text-on-surface-variant">5 HOURS AGO • BERLIN</p>
+</div>
+</div>
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</div>
+<div class="relative aspect-square border-4 border-on-background overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant pasta dish with oil splatters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqvufMn7PbJ8winKfn0rNfCUVnhha3WEnwR6_eO7zICpDTl4vWhRPzrEq0mRt9erowYretaItF8ja32q8PaKGeSJpmkYquE96hfvXeYkD4tOXwmSIRBraQ_6BlR8lDcjKDmiX22lvjcWijfLhMeHjZ_uWAfzz4afzi3IjecypflAcxPHvln1ObHNGKcG3zkuhQmrximD-Sib6OiYF0C1P95BvDsd5Wpxt_0SVyY5U-P-rl7Ts_kLeDr3VB3vndCO_hSSfKUwdVAeAv"/>
+<!-- Play Indicator -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-24 h-24 liquid-glass border-4 border-on-background flex items-center justify-center active:scale-90 transition-none cursor-pointer">
+<span class="material-symbols-outlined text-6xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Stats Floating -->
+<div class="absolute top-6 right-6 flex flex-col gap-2">
+<div class="liquid-glass border-2 border-on-background p-2 text-center">
+<span class="font-headline font-black text-xl block">4.8K</span>
+<span class="font-label text-[8px] font-bold uppercase tracking-widest">VIEWS</span>
+</div>
+<div class="liquid-glass border-2 border-on-background p-2 text-center">
+<span class="font-headline font-black text-xl block">320</span>
+<span class="font-label text-[8px] font-bold uppercase tracking-widest">FIRE</span>
+</div>
+</div>
+</div>
+<div class="mt-4 flex gap-4 px-2">
+<button class="flex-1 bg-surface text-on-background font-headline font-black py-4 border-4 border-on-background active:translate-y-1 transition-none uppercase tracking-tighter text-xl flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+                    SWIPE TO SAVE
+                </button>
+<a class="w-16 h-16 bg-primary-fixed border-4 border-on-background flex items-center justify-center transition-none" href="#">
+<span class="material-symbols-outlined scale-125 text-black" data-icon="share">share</span>
+</a>
+</div>
+<div class="mt-6 px-2 space-y-2">
+<h3 class="font-headline font-extrabold text-3xl uppercase leading-none tracking-tighter">THE ONLY CARBONARA RECIPIE YOU NEED.</h3>
+<p class="font-body text-xl leading-relaxed text-on-surface-variant">Stop using cream. It's an insult. Guanciale, pecorino, egg yolks. That is it. The steam is the secret... <span class="font-headline font-bold text-on-background uppercase text-sm cursor-pointer underline">READ MORE</span></p>
+</div>
+</article>
+<!-- Feed Item 3 (Bento Style Grid Interaction) -->
+<article class="mb-20 group relative">
+<div class="flex items-center justify-between mb-4 px-2">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 border-2 border-on-background">
+<img class="w-full h-full object-cover" data-alt="Portrait of male user" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPgNa1bVolIdZARUjNysOpb3svuVshT7b-fyi0Sy8yuStXK5YPFJylkvDlGZWeptVCsNiYBNDoOnH_KTkbLL3CuccMYwqN5smY5p435niSJpQj2ikDSGmU1zSmvzeEmhR7693bhwMlbT0MbL7iCfzPKSvUPcN6wg2E6rto7EQQKBhfuRbT7FueXgBMHNX3VyLpRA_GO3nsqg_YSc3A1omqKLiq5oi4eiMc8u-CVd8zH7wS1U1bmPexgJiEfUH0tKZ8rMhGK4VXpzzC"/>
+</div>
+<div>
+<p class="font-headline font-black text-lg uppercase leading-none">MARCUS.RAW</p>
+<p class="font-label text-xs uppercase tracking-tight text-on-surface-variant">1 DAY AGO • NYC</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 grid-rows-2 gap-2 aspect-square border-4 border-on-background bg-on-background p-2">
+<div class="relative bg-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Spicy noodles close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxNPWkdimauQeqxWoLJ9MPRrvACEz2TTAQCfDZuWtEzknYaY8sNIDYjpXIRpi-nT1yjZY3FG1F1g07myiLimmIvzeXVo6C2izMf2h2bl8YVDzTMyLBT1REcYIr8OzJkAVkxMrPU9-nnLb_FyED_vZp3g2TlCnBu8r54DqXnmZ5a0t7FSeQ6s-0KUN8zHD7rGDwXajAQRzakHcxxUZjELr1rpuIclyPoO2l_LAKz8VkdR33Ya-xdv6JWIxr2pNrLBpHOQys5hgghx6u"/>
+</div>
+<div class="relative bg-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Salad bowl messy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGd-7rxQ20wCyzwDd1xlElUtqkD7dLo-6qQoB0IMCPvpvHy_kpccChrXgbsI0SlZ5crmo8anRiLchTVVSw-Zm8pxdUr5w1llzMI44HPLY2vwD755AjklBfiPQ3c_uNmDIeX9KBy5f6vPL67SJWeuS6WxSknp3RhqxdmGRuBfwuomU1_PP5KgdqVgvxms39wdlIjiZ7sPCkBy6lc8WNlvgOSSt70_Oia5nYU5KVGAyJtB57WjzUz60VcWFtlZKAZ5u8IbQd-5pA9rVU"/>
+</div>
+<div class="relative bg-surface overflow-hidden col-span-2">
+<img class="w-full h-full object-cover" data-alt="Pizza slice steam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChkmQ-OeHNgMpMY1YtoBJ4zmOWyE6J6HzoJYL7qEuUDs7SR_8t0ths1wkJMbDUHAxcEl25jzKWUPPXyRE5AuQSJps1AKHjktxxF95ZxxEst1MUFFr6dn13BkiZ-Iy0Euy307CNcegvFA-zT6ORwIi97WRiu7evdYMI3XSvghnF9PF8ZbzXzo_EZNLIxVkgst0YMLZzKEt3BrmgAHyRJUWBk-DklHLb-sfkOnorhOut3QuRuw1dascriAQtQHDl1aMtXxVqNOY4iypq"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<span class="font-headline font-black text-white text-5xl italic">+12 PHOTOS</span>
+</div>
+</div>
+</div>
+<div class="mt-4 flex gap-4 px-2">
+<button class="flex-1 bg-primary-fixed text-on-primary-fixed font-headline font-black py-4 border-4 border-on-background active:translate-y-1 transition-none uppercase tracking-tighter text-xl flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+                    SWIPE TO SAVE
+                </button>
+</div>
+</article>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-[#ffffff]/60 dark:bg-black/60 backdrop-blur-xl border-t-4 border-[#2d2f2f] dark:border-[#2ff801]">
+<a class="flex flex-col items-center justify-center bg-[#2ff801] text-black p-2 border-2 border-black scale-105 transition-none active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="amp_stories" style="font-variation-settings: 'FILL' 1;">amp_stories</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase mt-1">FEED</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 hover:bg-[#2ff801] hover:text-black transition-none active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase mt-1">THE LAB</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 hover:bg-[#2ff801] hover:text-black transition-none active:scale-95" href="#">
+<span class="material-symbols-outlined text-4xl" data-icon="add_box">add_box</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase mt-1">COOK</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 hover:bg-[#2ff801] hover:text-black transition-none active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase mt-1">LIST</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 hover:bg-[#2ff801] hover:text-black transition-none active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase mt-1">STASH</span>
+</a>
+</nav>
+</body></html>

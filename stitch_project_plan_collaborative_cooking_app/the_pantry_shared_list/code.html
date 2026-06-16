@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Pantry - Shared Shopping List | LAB KITCHEN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface-variant": "#5a5c5c",
+                        "surface-container-highest": "#dbdddd",
+                        "on-surface": "#2d2f2f",
+                        "tertiary-dim": "#003cd3",
+                        "on-primary-fixed-variant": "#0d6200",
+                        "surface-container-high": "#e1e3e3",
+                        "on-tertiary-container": "#002388",
+                        "on-background": "#2d2f2f",
+                        "surface-dim": "#d2d5d5",
+                        "on-tertiary": "#f2f1ff",
+                        "tertiary": "#0846ed",
+                        "on-tertiary-fixed-variant": "#002a9e",
+                        "primary-container": "#2ff801",
+                        "inverse-primary": "#2ff801",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#0b5800",
+                        "inverse-on-surface": "#9c9d9d",
+                        "surface-tint": "#0f6b00",
+                        "surface-container": "#e7e8e8",
+                        "on-error-container": "#520c00",
+                        "secondary-fixed-dim": "#d4d4d4",
+                        "error-container": "#f95630",
+                        "tertiary-fixed": "#9bacff",
+                        "on-primary": "#d3ffc1",
+                        "error": "#b02500",
+                        "surface-variant": "#dbdddd",
+                        "secondary-dim": "#4f4f4f",
+                        "on-secondary": "#f3f3f3",
+                        "primary-fixed-dim": "#2be800",
+                        "on-primary-fixed": "#064200",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary": "#0f6b00",
+                        "outline-variant": "#acadad",
+                        "on-secondary-fixed": "#3f3f3f",
+                        "surface-container-low": "#f0f1f1",
+                        "secondary": "#5b5b5b",
+                        "on-tertiary-fixed": "#00104d",
+                        "error-dim": "#b92902",
+                        "secondary-container": "#e2e2e2",
+                        "background": "#f6f6f6",
+                        "on-secondary-fixed-variant": "#5b5b5b",
+                        "on-error": "#ffefec",
+                        "surface": "#f6f6f6",
+                        "surface-bright": "#f6f6f6",
+                        "outline": "#757777",
+                        "inverse-surface": "#0c0f0f",
+                        "on-secondary-container": "#525252",
+                        "tertiary-fixed-dim": "#889dff",
+                        "primary-dim": "#0c5d00"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Newsreader"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Newsreader', serif; }
+        .brutalist-shadow { box-shadow: 8px 8px 0px 0px #2d2f2f; }
+        .brutalist-shadow-sm { box-shadow: 4px 4px 0px 0px #2d2f2f; }
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #f6f6f6; }
+        ::-webkit-scrollbar-thumb { background: #2d2f2f; border: 3px solid #f6f6f6; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="bg-[#f6f6f6] dark:bg-black docked full-width top-0 border-b-4 border-[#2d2f2f] dark:border-[#2ff801] flex justify-between items-center w-full px-6 py-4 sticky z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2d2f2f] dark:text-[#2ff801] cursor-pointer active:translate-y-1 transition-none" data-icon="menu">menu</span>
+<h1 class="font-['Space_Grotesk'] font-black uppercase tracking-tighter text-4xl text-[#2d2f2f] dark:text-white italic">LAB KITCHEN</h1>
+</div>
+<div class="w-10 h-10 border-2 border-[#2d2f2f] overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a male chef" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2ssVuVo37bocD14vWsC2nqip_H7VwfoQIO--Mc50jhoBtgeyPvXKKbOyi8zWlbVFbso6nhZo6S3zJtiVdaKas9vlCYjOCjXcu-84hnOJM9RVuLKIl73ZjD8Qg6enycQna1pxSoSHOBRQnJhEuYpj-OUDofs6DIOAYyXMbSnmZDGA6DkyitTkAcutVWK7xUVUhfqeLVHHLCyAqeGKJr2fs06d25TOHsNCLpxqKpV9raTwfx2e5_esPlYiAc44CVz9BVWYoVqnFd_eT"/>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-6 pt-12 pb-32">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b-4 border-on-background pb-8">
+<div>
+<span class="font-headline font-bold text-primary-fixed-dim uppercase tracking-widest text-sm mb-2 block">Collab List</span>
+<h2 class="font-headline font-black text-6xl uppercase leading-[0.9] italic">THE PANTRY</h2>
+</div>
+<div class="flex -space-x-3">
+<img alt="Team member" class="w-12 h-12 border-2 border-on-background object-cover" data-alt="User avatar woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB63BZRDfghQh5J-sMeY5rO2mmSmVfauMI4dGjOqNW6pKjtpr6Y8ZeNfLGGeZ8r5a3Pw8dloEMFMIsq0DsPc4KiMKJ4rKfHUVt7Me2ITrcjbd6cG3xiEpD1UaY__2omDtUEhL-u6_j5B5BkF295eni1JCIE1aDAl8qdMG1_127SzQbtBS5zGivEwwrGsx9d5FYUBcV3cuxPoMXFTXihp04K-blqku98veXyE3wX_4OHSzAvCbDWLxnKZUeV8nJgckEiyhnjKAHenjSt"/>
+<img alt="Team member" class="w-12 h-12 border-2 border-on-background object-cover" data-alt="User avatar man with beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD86ysc1jfEv2_EFaLDflaFudDqVoZHcVhFDXB4Dap27FZf0K-OvpTO9kP7KZltjCwt3CwK6oQe6YPC07D2WSkGpptB9_glRjurczxD58mzgqW21HZNxM6rqsI11OEDuh--GMendLogeGryhjxO1puSqo1vBR4Uyw2JVl_AEzeYdrmk6h4gpxvXmK2ih8bNUWzl3q0Sdc46gjgXZNzHVoKAvPk5eyV9imzdsA1L0wR-Fz1e-cCGbaFRqZ2OQbYMw-Oc-lDAa6sovNkF"/>
+<div class="w-12 h-12 border-2 border-on-background bg-primary-fixed flex items-center justify-center font-headline font-black text-on-primary-fixed">
+                        +4
+                    </div>
+</div>
+</div>
+</section>
+<!-- Aisle-Ordered Checklist -->
+<div class="space-y-12">
+<!-- Category: PRODUCE -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-tertiary p-2 border-2 border-on-background">
+<span class="material-symbols-outlined text-white" data-icon="eco">eco</span>
+</div>
+<h3 class="font-headline font-black text-2xl uppercase italic tracking-tight">PRODUCE</h3>
+</div>
+<div class="grid gap-4">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest border-2 border-on-background p-4 flex items-center justify-between brutalist-shadow-sm">
+<div class="flex items-center gap-4">
+<input class="w-8 h-8 border-4 border-on-background text-primary-fixed focus:ring-0 checked:bg-primary-fixed cursor-pointer" type="checkbox"/>
+<div>
+<p class="font-headline font-bold text-xl uppercase leading-none">BIRD'S EYE CHILLIES</p>
+<span class="font-body italic text-on-surface-variant text-sm">Quant: 50g</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Added by Sarah" class="w-8 h-8 border border-on-background grayscale" data-alt="Contributor avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjkZbA62tRqwqEUBExszF2h06RB68NwQD52IEJU-5xfB5HHY_CnzZkXEhRoTqCePNZ-3Dp-RPfKZeLNr-V6PppnbXW8jbQQitpBsZCe5l_3t1Wn3JhaeMToenwgUK6R-gH2HYLpGUXD1pUCuJxKxrnxCn__n9ThAAPcvoN0eWuFm8fvMXDf3Vi0bWQCBrLMf91L6Gq2Vi0E2sZXvmSOfNyEmyU270VJ210aC82RlftRA99pKHWihbfw2Tif4YlG1EPHSo193YvuLQE"/>
+<button class="bg-surface border-2 border-on-background px-3 py-1 font-headline font-bold text-[10px] uppercase hover:bg-primary-fixed transition-none active:translate-y-0.5">ASSIGN</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest border-2 border-on-background p-4 flex items-center justify-between brutalist-shadow-sm">
+<div class="flex items-center gap-4">
+<input checked="" class="w-8 h-8 border-4 border-on-background text-primary-fixed focus:ring-0 checked:bg-primary-fixed cursor-pointer" type="checkbox"/>
+<div>
+<p class="font-headline font-bold text-xl uppercase leading-none line-through opacity-40">CAVOLO NERO</p>
+<span class="font-body italic text-on-surface-variant text-sm opacity-40">Quant: 2 Bunches</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: DAIRY & CHILLED -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-primary-fixed p-2 border-2 border-on-background">
+<span class="material-symbols-outlined text-on-background" data-icon="egg">egg</span>
+</div>
+<h3 class="font-headline font-black text-2xl uppercase italic tracking-tight">DAIRY &amp; CHILLED</h3>
+</div>
+<div class="grid gap-4">
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest border-2 border-on-background p-4 flex items-center justify-between brutalist-shadow-sm">
+<div class="flex items-center gap-4">
+<input class="w-8 h-8 border-4 border-on-background text-primary-fixed focus:ring-0 checked:bg-primary-fixed cursor-pointer" type="checkbox"/>
+<div>
+<p class="font-headline font-bold text-xl uppercase leading-none">PECORINO ROMANO</p>
+<span class="font-body italic text-on-surface-variant text-sm">Quant: 200g</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Added by Tom" class="w-8 h-8 border border-on-background grayscale" data-alt="Contributor avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBluqI1iiMsg5Q_TqKYsbhfPHWFivP0bIRCVnG8DsgGhiEObgWaqSDxV--xq2gaZeVs_RYi7IMlR4B7_4_mfIhE4XncIhl5y0J8MXmYRpzIgyFU9j5eA9OAd3XifpkxN_VWeGUKME3UIloBh1A8CBOc6vzb8ntg0lyoZLQ0-fSHs4w6Rozc3e8rC1GbMcCgPLffuE52am4wgZIOV8skcenC0X8NOEqdxY8sUSGT3FKXRD_64-wwm95fa9uyxMeo7y9OP6o6y7bjOjo7"/>
+<button class="bg-surface border-2 border-on-background px-3 py-1 font-headline font-bold text-[10px] uppercase hover:bg-primary-fixed transition-none active:translate-y-0.5">ASSIGN</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: PANTRY -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-on-background p-2 border-2 border-on-background">
+<span class="material-symbols-outlined text-white" data-icon="inventory_2">inventory_2</span>
+</div>
+<h3 class="font-headline font-black text-2xl uppercase italic tracking-tight">STAPLES</h3>
+</div>
+<div class="grid gap-4">
+<!-- Item 4 -->
+<div class="bg-surface-container-lowest border-2 border-on-background p-4 flex items-center justify-between brutalist-shadow-sm">
+<div class="flex items-center gap-4">
+<input class="w-8 h-8 border-4 border-on-background text-primary-fixed focus:ring-0 checked:bg-primary-fixed cursor-pointer" type="checkbox"/>
+<div>
+<p class="font-headline font-bold text-xl uppercase leading-none">BUCATINI PASTA</p>
+<span class="font-body italic text-on-surface-variant text-sm">Quant: 2 Packs</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 border border-on-background bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" data-icon="person_add">person_add</span>
+</div>
+<button class="bg-surface border-2 border-on-background px-3 py-1 font-headline font-bold text-[10px] uppercase hover:bg-primary-fixed transition-none active:translate-y-0.5">ASSIGN</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Checkout Sticky Summary -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[calc(100%-3rem)] max-w-4xl z-40">
+<div class="bg-white border-4 border-on-background p-6 brutalist-shadow flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex gap-12 w-full md:w-auto">
+<div>
+<p class="font-headline font-bold text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">TOTAL ITEMS</p>
+<p class="font-headline font-black text-4xl leading-none">12</p>
+</div>
+<div>
+<p class="font-headline font-bold text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">REMAINING</p>
+<p class="font-headline font-black text-4xl leading-none text-tertiary">04</p>
+</div>
+<div>
+<p class="font-headline font-bold text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">EST. TOTAL</p>
+<p class="font-headline font-black text-4xl leading-none">£42.50</p>
+</div>
+</div>
+<button class="w-full md:w-auto bg-primary-fixed text-on-primary-fixed font-headline font-black text-2xl uppercase px-12 py-4 border-4 border-on-background hover:bg-on-background hover:text-primary-fixed transition-none active:translate-y-1">
+                    CHECKOUT NOW
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-[#ffffff]/60 dark:bg-black/60 backdrop-blur-xl border-t-4 border-[#2d2f2f] dark:border-[#2ff801]">
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="amp_stories">amp_stories</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">FEED</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">THE LAB</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="add_box">add_box</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">COOK</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#2ff801] text-black p-2 border-2 border-black scale-105 transition-none active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">LIST</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 transition-none active:scale-95 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">STASH</span>
+</div>
+</nav>
+</body></html>

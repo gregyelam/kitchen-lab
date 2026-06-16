@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#5a5c5c",
+              "surface-container-highest": "#dbdddd",
+              "on-surface": "#2d2f2f",
+              "tertiary-dim": "#003cd3",
+              "on-primary-fixed-variant": "#0d6200",
+              "surface-container-high": "#e1e3e3",
+              "on-tertiary-container": "#002388",
+              "on-background": "#2d2f2f",
+              "surface-dim": "#d2d5d5",
+              "on-tertiary": "#f2f1ff",
+              "tertiary": "#0846ed",
+              "on-tertiary-fixed-variant": "#002a9e",
+              "primary-container": "#2ff801",
+              "inverse-primary": "#2ff801",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#0b5800",
+              "inverse-on-surface": "#9c9d9d",
+              "surface-tint": "#0f6b00",
+              "surface-container": "#e7e8e8",
+              "on-error-container": "#520c00",
+              "secondary-fixed-dim": "#d4d4d4",
+              "error-container": "#f95630",
+              "tertiary-fixed": "#9bacff",
+              "on-primary": "#d3ffc1",
+              "error": "#b02500",
+              "surface-variant": "#dbdddd",
+              "secondary-dim": "#4f4f4f",
+              "on-secondary": "#f3f3f3",
+              "primary-fixed-dim": "#2be800",
+              "on-primary-fixed": "#064200",
+              "secondary-fixed": "#e2e2e2",
+              "primary": "#0f6b00",
+              "outline-variant": "#acadad",
+              "on-secondary-fixed": "#3f3f3f",
+              "surface-container-low": "#f0f1f1",
+              "secondary": "#5b5b5b",
+              "on-tertiary-fixed": "#00104d",
+              "error-dim": "#b92902",
+              "secondary-container": "#e2e2e2",
+              "background": "#f6f6f6",
+              "on-secondary-fixed-variant": "#5b5b5b",
+              "on-error": "#ffefec",
+              "surface": "#f6f6f6",
+              "surface-bright": "#f6f6f6",
+              "outline": "#757777",
+              "inverse-surface": "#0c0f0f",
+              "on-secondary-container": "#525252",
+              "tertiary-fixed-dim": "#889dff",
+              "primary-dim": "#0c5d00",
+              "primary-fixed": "#2ff801"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Newsreader"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #2d2f2f;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#f6f6f6] dark:bg-black border-b-4 border-[#2d2f2f] dark:border-[#2ff801] flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#2d2f2f] dark:text-white active:translate-y-1 cursor-pointer">menu</span>
+<h1 class="font-['Space_Grotesk'] font-black uppercase tracking-tighter text-4xl text-[#2d2f2f] dark:text-white italic">LAB KITCHEN</h1>
+</div>
+<div class="w-10 h-10 border-2 border-[#2d2f2f] bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile avatar close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvn2cT5ujj1jRxQgtVwCvFglChshXkFJ1FE9XYXho_i3XrDkgH5StByKlbSHNctgphevDO1OZ0ga3bS9xbIFt1eWD6rXZ9-_gkpgYCblG72tqai_eHq4EFl9cYrDpXnwiVVXKRLke74cX_WXgalWsiuHH4ny12_jNVtLmH1qT1VQ1T3csafcEOoo4iMoTsPsBvU0RUndMzKjL-oGlKDVVowN4MS7BAgdH8fxapzLSucQHgyZ8ki7nt-4ggL49usPHjT8ZGp_fhNHDG"/>
+</div>
+</header>
+<main class="pt-[84px] pb-24">
+<!-- Hero Video Section -->
+<section class="relative w-full aspect-[9/16] md:aspect-video bg-black overflow-hidden border-b-4 border-on-background">
+<img class="w-full h-full object-cover opacity-80" data-alt="High quality food preparation in dark kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWEe2bTLxW46knZcQGZ63APvTfwoXH8k1SgeEqL3pNhSstUlX0avhQRXLEVtq8iDbaVv36FVb-E9cXH225m3RHsetnUXw6306KRQs0ep32gHxBlOV6YDMa4GN1oEe9iQnmR5TL-TGhlYZ36eyuqo2K8n7sXUJUPqJrZLwwPthlFHqG1IV7nnFkD2QS7q_8-XPhmJm-qLQbIuVF6QHSWib_Ut__2PpFtiUMZa3qVRYUCVFhD5AYXft56wfV-yeYofLlkw8gsqp8yWkx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<!-- Translucent Overlay Info -->
+<div class="absolute bottom-0 left-0 w-full p-6 glass-panel border-t-4 border-on-background">
+<div class="flex justify-between items-end">
+<div>
+<span class="inline-block bg-primary-fixed text-on-primary-fixed px-3 py-1 font-label font-black text-xs tracking-widest uppercase mb-2 border-2 border-on-background">LATEST DROP</span>
+<h2 class="font-headline font-black text-4xl md:text-6xl uppercase leading-none tracking-tighter text-on-background">MISO BUTTER STEAK SANDO</h2>
+</div>
+<div class="flex flex-col items-end gap-2">
+<div class="bg-primary-fixed text-on-primary-fixed font-label font-black px-4 py-2 border-4 border-on-background neo-shadow">
+                            £2.45 <span class="text-[10px] block leading-none">PER SERVING</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Floating Context -->
+<div class="absolute top-6 right-6 flex flex-col items-center gap-4">
+<div class="flex flex-col items-center">
+<div class="flex -space-x-3 mb-1">
+<div class="w-10 h-10 rounded-full border-2 border-on-background overflow-hidden bg-white">
+<img class="w-full h-full object-cover" data-alt="Friend avatar cooking 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc7XpNHpDfGAltnwmFoKmM-f4f0ZAoBuYNiS4ITEcVDFNrb6BWQprHfVKpQhIL7jdCZuiRidu-Ru8sHFPELVcQzVatvjE9H1yuJh0C9UsH40JKUiSab6_u9XKbVv6JoE458TEvgmEQHDEIJuGMOWvzAOlJtbn6sOX9AgV8QU88eZzH5hOir-LAxcnv8EAJv9MaOrwgT2O6LVUKIkquQ_54dYrREf-2pycGA7PsKsHB4VFZRy2x-iRVyWjRCgAvVz6ZRsZZ5kDsjlWC"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-on-background overflow-hidden bg-white">
+<img class="w-full h-full object-cover" data-alt="Friend avatar cooking 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGfQnZIZ_6VA6surBhbHF75GmSMFEzLv_6xcD8jXof5HbmZAv6YI9l9WfLDMJe3xQmQ4pvxV58A6FDsC0kd3INAh5tUVZvKanhgrvCg6L-ZYhI5b6A_Xr0hIqXxHGJy3VH8_cm3tkJOJJEQ63-ta8os1NR_mEhAhzlmsK51eBX5E6_ugd4FMrky5o_gVLNZC-S1xcdkTcI-N35bCAkLKHkgjH9Qk86BAO-fdbW-rmZrIsMwcpc_1RjRP9Io_ehrryq5vBttoYDHC1J"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-on-background flex items-center justify-center bg-primary-fixed font-label font-bold text-xs text-on-background">
+                            +12
+                        </div>
+</div>
+<span class="font-label font-black text-[10px] uppercase bg-on-background text-white px-2 py-0.5">COOKING NOW</span>
+</div>
+</div>
+</section>
+<!-- Recipe Content Bento -->
+<div class="grid grid-cols-1 md:grid-cols-12 w-full">
+<!-- Ingredients: High Contrast Box -->
+<aside class="md:col-span-4 bg-on-background text-white p-8 border-b-4 md:border-b-0 md:border-r-4 border-black">
+<h3 class="font-headline font-black text-3xl uppercase tracking-tighter mb-8 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed">list_alt</span>
+                    Ingredients
+                </h3>
+<ul class="space-y-6 font-body text-xl italic leading-relaxed">
+<li class="flex justify-between border-b border-white/20 pb-2">
+<span>Ribeye Steak</span>
+<span class="font-label not-italic font-bold text-primary-fixed">250G</span>
+</li>
+<li class="flex justify-between border-b border-white/20 pb-2">
+<span>White Miso Paste</span>
+<span class="font-label not-italic font-bold text-primary-fixed">2 TBSP</span>
+</li>
+<li class="flex justify-between border-b border-white/20 pb-2">
+<span>Unsalted Butter</span>
+<span class="font-label not-italic font-bold text-primary-fixed">50G</span>
+</li>
+<li class="flex justify-between border-b border-white/20 pb-2">
+<span>Shokupan (Milk Bread)</span>
+<span class="font-label not-italic font-bold text-primary-fixed">2 SLICES</span>
+</li>
+<li class="flex justify-between border-b border-white/20 pb-2">
+<span>Togarashi</span>
+<span class="font-label not-italic font-bold text-primary-fixed">PINCH</span>
+</li>
+<li class="flex justify-between border-b border-white/20 pb-2">
+<span>Kewpie Mayo</span>
+<span class="font-label not-italic font-bold text-primary-fixed">TO SERVE</span>
+</li>
+</ul>
+<button class="mt-12 w-full bg-primary-fixed text-on-background font-label font-black py-4 border-4 border-black neo-shadow hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-widest">
+                    ADD TO LIST
+                </button>
+</aside>
+<!-- Instructions: Step by Step -->
+<section class="md:col-span-8 bg-surface-container-lowest p-8">
+<div class="flex justify-between items-center mb-12">
+<h3 class="font-headline font-black text-3xl uppercase tracking-tighter">The Method</h3>
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<span class="font-label font-black text-[10px] uppercase text-on-surface-variant">TIME</span>
+<span class="font-headline font-bold text-lg uppercase">15 MINS</span>
+</div>
+<div class="w-px h-8 bg-on-background/20"></div>
+<div class="flex flex-col items-center">
+<span class="font-label font-black text-[10px] uppercase text-on-surface-variant">LEVEL</span>
+<span class="font-headline font-bold text-lg uppercase">EASY AF</span>
+</div>
+</div>
+</div>
+<div class="space-y-16">
+<!-- Step 1 -->
+<div class="flex gap-6 group">
+<div class="flex-none">
+<div class="w-16 h-16 border-4 border-on-background flex items-center justify-center font-headline font-black text-4xl bg-surface-container-low group-hover:bg-primary-fixed transition-colors">
+                                01
+                            </div>
+</div>
+<div class="pt-2">
+<p class="font-body text-2xl leading-snug text-on-background">
+                                Pat the steak dry and season heavily with salt. Sear in a screaming hot cast-iron pan for 2 minutes per side until a deep mahogany crust forms.
+                            </p>
+<div class="mt-4 w-full h-48 border-2 border-on-background bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all" data-alt="Steak searing in a pan with smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWQ65yCBZu9CPIwVoI5lqnR4ef9B-6elojzt-MfWJ_jh37zUqHYNl_Bbz9hRFcwNVUbmwpa4Qnh8NaW5r_i4znuAJ97rODvpyV8FyNVSSWnZLVjQui0HyOwEmR_0DRzzRc67Ekr4JPqMxalEzsDmozhdBO2w8CFNbSYW9WxdbRw2961YGr9KDPjUGjXSWm29Q9cAE9Az8gg0ONnyaA6Fr-djBntZtYdEzq69uxQefUrlS-m0CjZWZo4a-yuVwdonsImseGt0f34MC6"/>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-6 group">
+<div class="flex-none">
+<div class="w-16 h-16 border-4 border-on-background flex items-center justify-center font-headline font-black text-4xl bg-surface-container-low group-hover:bg-primary-fixed transition-colors">
+                                02
+                            </div>
+</div>
+<div class="pt-2">
+<p class="font-body text-2xl leading-snug text-on-background">
+                                Lower the heat and drop in the miso and butter. Baste the steak continuously for 1 minute as the butter foams and smells nutty.
+                            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-6 group">
+<div class="flex-none">
+<div class="w-16 h-16 border-4 border-on-background flex items-center justify-center font-headline font-black text-4xl bg-surface-container-low group-hover:bg-primary-fixed transition-colors">
+                                03
+                            </div>
+</div>
+<div class="pt-2">
+<p class="font-body text-2xl leading-snug text-on-background">
+                                Toast your shokupan in the residual steak fat. Slather with mayo, add the sliced steak, and pour over every last drop of that miso butter.
+                            </p>
+</div>
+</div>
+</div>
+<div class="mt-20 p-8 border-4 border-dashed border-on-background bg-surface-container-low">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">group</span>
+<h4 class="font-headline font-black text-2xl uppercase italic">COOK WITH FRIENDS</h4>
+</div>
+<p class="font-body text-xl mb-6">Start a live session and cook this together. Share progress, timers, and final plates in real-time.</p>
+<button class="w-full bg-on-background text-white font-label font-black py-4 border-4 border-on-background hover:bg-primary-fixed hover:text-on-background transition-none uppercase tracking-widest">
+                        INVITE THE SQUAD
+                    </button>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 pb-safe bg-[#ffffff]/60 dark:bg-black/60 backdrop-blur-xl border-t-4 border-[#2d2f2f] dark:border-[#2ff801]">
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 active:scale-95 transition-none">
+<span class="material-symbols-outlined">amp_stories</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">FEED</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 active:scale-95 transition-none">
+<span class="material-symbols-outlined">biotech</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">THE LAB</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#2ff801] text-black p-2 border-2 border-black scale-105 active:scale-95 transition-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_box</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">COOK</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 active:scale-95 transition-none">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">LIST</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2d2f2f] dark:text-white p-2 active:scale-95 transition-none">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest uppercase">STASH</span>
+</div>
+</nav>
+</body></html>
